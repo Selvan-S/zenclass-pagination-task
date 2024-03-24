@@ -16,6 +16,7 @@ tableDiv.setAttribute("class", "table-responsive");
 document.body.appendChild(tableDiv);
 
 let tbl = document.createElement("table");
+tbl.setAttribute("id", "table");
 tbl.classList.add("table", "table-bordered");
 let header = tbl.createTHead();
 let row = header.insertRow(0);
