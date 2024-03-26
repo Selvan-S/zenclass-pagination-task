@@ -45,12 +45,16 @@ xhr.onload = () => {
     page.first = 0;
     page.last = 9;
   }
+  const buttonsDiv = document.createElement("div");
+  buttonsDiv.setAttribute("id", "buttons");
+  buttonsDiv.setAttribute("class", "d-flex justify-content-center");
+  document.body.appendChild(buttonsDiv);
 
   let pagenationBar = document.createElement("div");
 
   pagenationBar.setAttribute("class", "pageBarStyle");
 
-  document.body.appendChild(pagenationBar);
+  buttonsDiv.appendChild(pagenationBar);
 
   localStorage.setItem("page", JSON.stringify(page));
   let totalItemCount = paginationData.length;
@@ -149,9 +153,4 @@ xhr.onload = () => {
     });
     tbodycount = tbl.lastChild.childElementCount;
   }
-
-  const buttonsDiv = document.createElement("div");
-  buttonsDiv.setAttribute("id", "buttons");
-  buttonsDiv.setAttribute("class", "d-flex justify-content-center");
-  document.body.appendChild(buttonsDiv);
 };
