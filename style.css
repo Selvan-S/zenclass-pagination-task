@@ -87,17 +87,20 @@ body {
   gap: 1rem;
   margin-top: 5rem;
 }
-
+#tableDiv {
+  overflow-x: scroll;
+}
 .table {
   margin: 1rem auto;
   width: auto;
   text-align: center;
 }
-
+#buttons {
+  overflow-x: scroll;
+}
 @media (max-width: 800px) {
-  #result {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  #table {
+    margin: 0.5rem;
   }
 }
 

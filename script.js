@@ -13,6 +13,7 @@ document.body.appendChild(p);
 
 const tableDiv = document.createElement("div");
 tableDiv.setAttribute("class", "table-responsive");
+tableDiv.setAttribute("id", "tableDiv");
 document.body.appendChild(tableDiv);
 
 let tbl = document.createElement("table");
